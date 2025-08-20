@@ -1,34 +1,132 @@
 {
   "MiniTest": {
     "coverage": {
-      "/Users/nawamin/academy-project-exam/my-academy-todoapp/app/controllers/application_controller.rb": {
+      "/Users/nawamin/academy-project-exam/my-academy-todoapp/app/models/todo.rb": {
         "lines": [
-          0,
-          null,
-          0,
-          0
+          1,
+          2,
+          1,
+          1,
+          null
+        ],
+        "branches": {}
+      },
+      "/Users/nawamin/academy-project-exam/my-academy-todoapp/app/models/application_record.rb": {
+        "lines": [
+          1,
+          1,
+          null
         ],
         "branches": {}
       },
       "/Users/nawamin/academy-project-exam/my-academy-todoapp/app/controllers/todos_controller.rb": {
         "lines": [
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          2,
+          null,
+          0,
+          0,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
           0,
           0,
           0,
           0,
-          0
+          null,
+          0,
+          null,
+          null,
+          null,
+          null,
+          1,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          0,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null
+        ],
+        "branches": {
+          "[:if, 0, 19, 6, 25, 9]": {
+            "[:then, 1, 20, 8, 21, 93]": 1,
+            "[:else, 2, 23, 8, 24, 66]": 0
+          },
+          "[:if, 3, 33, 6, 38, 9]": {
+            "[:then, 4, 34, 8, 35, 83]": 0,
+            "[:else, 5, 37, 8, 37, 36]": 0
+          }
+        }
+      },
+      "/Users/nawamin/academy-project-exam/my-academy-todoapp/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          null
         ],
         "branches": {}
       },
       "/Users/nawamin/academy-project-exam/my-academy-todoapp/app/helpers/application_helper.rb": {
         "lines": [
-          0,
-          0
+          1,
+          null
+        ],
+        "branches": {}
+      },
+      "/Users/nawamin/academy-project-exam/my-academy-todoapp/app/helpers/profile_helper.rb": {
+        "lines": [
+          1,
+          null
         ],
         "branches": {}
       },
       "/Users/nawamin/academy-project-exam/my-academy-todoapp/app/helpers/todos_helper.rb": {
         "lines": [
+          1,
+          null
+        ],
+        "branches": {}
+      },
+      "/Users/nawamin/academy-project-exam/my-academy-todoapp/app/controllers/profile_controller.rb": {
+        "lines": [
+          0,
+          0,
           0,
           0
         ],
@@ -54,23 +152,8 @@
           0
         ],
         "branches": {}
-      },
-      "/Users/nawamin/academy-project-exam/my-academy-todoapp/app/models/application_record.rb": {
-        "lines": [
-          0,
-          0,
-          0
-        ],
-        "branches": {}
-      },
-      "/Users/nawamin/academy-project-exam/my-academy-todoapp/app/models/todo.rb": {
-        "lines": [
-          0,
-          0
-        ],
-        "branches": {}
       }
     },
-    "timestamp": 1755657722
+    "timestamp": 1755660605
   }
 }
