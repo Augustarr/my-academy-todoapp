@@ -1,0 +1,76 @@
+{
+  "MiniTest": {
+    "coverage": {
+      "/Users/nawamin/academy-project-exam/my-academy-todoapp/app/controllers/application_controller.rb": {
+        "lines": [
+          0,
+          null,
+          0,
+          0
+        ],
+        "branches": {}
+      },
+      "/Users/nawamin/academy-project-exam/my-academy-todoapp/app/controllers/todos_controller.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {}
+      },
+      "/Users/nawamin/academy-project-exam/my-academy-todoapp/app/helpers/application_helper.rb": {
+        "lines": [
+          0,
+          0
+        ],
+        "branches": {}
+      },
+      "/Users/nawamin/academy-project-exam/my-academy-todoapp/app/helpers/todos_helper.rb": {
+        "lines": [
+          0,
+          0
+        ],
+        "branches": {}
+      },
+      "/Users/nawamin/academy-project-exam/my-academy-todoapp/app/jobs/application_job.rb": {
+        "lines": [
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          0
+        ],
+        "branches": {}
+      },
+      "/Users/nawamin/academy-project-exam/my-academy-todoapp/app/mailers/application_mailer.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {}
+      },
+      "/Users/nawamin/academy-project-exam/my-academy-todoapp/app/models/application_record.rb": {
+        "lines": [
+          0,
+          0,
+          0
+        ],
+        "branches": {}
+      },
+      "/Users/nawamin/academy-project-exam/my-academy-todoapp/app/models/todo.rb": {
+        "lines": [
+          0,
+          0
+        ],
+        "branches": {}
+      }
+    },
+    "timestamp": 1755657722
+  }
+}
