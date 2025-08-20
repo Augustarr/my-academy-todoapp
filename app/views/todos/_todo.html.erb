@@ -1,4 +1,4 @@
-<li id="<%= dom_id(todo) %>" 
+<li id="<%= dom_id(todo) %>" data-testid="todo-id-<%= todo.id %>-item" 
     class="todo-item bg-[#C0C6BC] transition rounded-xl shadow-md p-4">
   <div class="flex items-center justify-between">
     <div class="flex items-center min-md:gap-4 max-md:gap-2">
@@ -19,14 +19,15 @@
           <% end %>
         <% end %>
       </span>
-      <span class="todo-title <%= 'line-through text-[#514F4D] opacity-70' if todo.completed %> flex-none text-lg max-lg:text-md max-md:text-sm max-sm:text-[12px] font-semibold text-[#3D4140] mx-2 truncate max-w-[400px] max-lg:max-w-[20vw] max-md:max-w-[40vw] @max-[320px]:max-w-[10vw] block">
+      <span class="todo-title <%= 'line-through text-[#514F4D] opacity-70' if todo.completed %> flex-none text-lg max-lg:text-md max-md:text-sm max-sm:text-[12px] font-semibold text-[#3D4140] mx-2 truncate max-w-[400px] max-lg:max-w-[20vw] max-md:max-w-[40vw] @max-[320px]:max-w-[10vw] block"
+      data-testid="todo-title-id-<%= todo.id %>" >
         <%= todo.title %>
       </span>
     </div>
     <div class="todo-actions ml-2">
       <%= button_to  todo_path(todo),
             method: :delete, 
-              data: { turbo: false, confirm: "Are you sure you want to delete this todo?" }, 
+            data: { turbo: false, testid: "todo-id-#{ todo.id }-del-btn" }, 
             class: "px-2 py-2 rounded-lg bg-red-500 text-white hover:bg-red-600 transition max-md:text-sm" do %>
         <%= image_tag "xmark-svgrepo-com.svg", class: "w-4 h-4" %>
       <% end %>

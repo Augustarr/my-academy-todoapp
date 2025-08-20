@@ -13,18 +13,21 @@
   <% end %>
   <div class="flex items-center gap-4">
     <%= form.text_field :title, 
-          placeholder: "Enter a task...", 
+          placeholder: "Enter a task...",
+          data: { testid: "input-feild" } ,
           class: " flex-1 rounded-lg  bg-white px-3 py-2 text-[#353734] placeholder-[#514F4D]/60 shadow-sm focus:outline-none focus:ring-2 focus:ring-[#DDBD9C]" %>
     <%= form.button "Add", 
           type: :submit, 
           name: "todo[status]", 
           value: false, 
+          data: { testid: "add-btn" } ,
           class: "max-md:hidden px-4 py-2 bg-[#3D4140] text-white rounded-lg hover:bg-[#FFA300] transition shadow-md" %>
-     <%= form.button type: :submit, 
+    <%= form.button type: :submit, 
                 name: "todo[status]", 
-                value: false, 
+                value: false,
+                data: { testid: "add-btn" } , 
                 class: "min-md:hidden px-2 py-2 bg-[#FFA500] text-white rounded-lg hover:bg-[#FFA300] transition shadow-md flex items-center gap-2" do %>
       <%= image_tag "plus-svgrepo-com.svg", class: "max-w-6 max-h-6"%>
-      <% end %>
+    <% end %>
   </div>
 <% end %>
