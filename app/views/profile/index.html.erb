@@ -1,6 +1,14 @@
 <div class="w-full h-full min-h-screen bg-[#353734]">
   <div class="flex flex-col min-lg:mx-40 bg-[#DDBD9C] rounded-2xl shadow-xl p-10">
-    <div class="flex justify-center mt-6 mb-10">
+    <div class="flex jutify-start mt-10 min-md:ml-20">
+      <%= link_to root_path,data: { testid: "my-brag-doc-back-btn" }, class: "flex items-start justify-center" do %>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="size-6 text-[#514F4D]">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
+        </svg>
+        <p class="flex justify-center ml-2 text-lg font-semibold text-[#514F4D] drop-shadow-md">Back</p>
+      <% end %>
+    </div>
+    <div class="flex justify-center mt-4 mb-10">
       <p class="text-5xl max-lg:text-3xl font-bold text-[#514F4D] drop-shadow-md">
         MY BRAG DOCUMENT
       </p>

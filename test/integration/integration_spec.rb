@@ -20,5 +20,8 @@ RSpec.describe "Courses List page", type: :feature, js: true do
 
     find("[data-testid='my-brag-doc-btn']").click
     expect(page).to have_current_path("/profile")
+
+    find("[data-testid='my-brag-doc-back-btn']").click
+    expect(page).to have_current_path("/")
   end
 end
