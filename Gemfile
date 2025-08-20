@@ -62,7 +62,7 @@ group :test do
   gem "selenium-webdriver"
   gem "simplecov", "~> 0.22.0"
   gem "simplecov_json_formatter"
-  gem 'rspec-rails', '~> 8.0.0'
+  gem "rspec-rails", "~> 8.0.0"
 end
 
 gem "tailwindcss-ruby", "~> 4.1"
