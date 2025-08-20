@@ -22,7 +22,7 @@ class TodosController < ApplicationController
         format.html { redirect_to todo_url(@todo), notice: "Todo was successfully created." }
       else
         format.turbo_stream { render turbo_stream: turbo_stream.replace("#{helpers.dom_id(@todo)}_form", partial: "form", locals: { todo: @todo }) }
-        format.html { render :new, status: :unprocessable_entity }
+        format.html { render :new }
       end
     end
   end
