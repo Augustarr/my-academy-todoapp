@@ -1,7 +1,8 @@
 require "test_helper"
 
 class ProfileControllerTest < ActionDispatch::IntegrationTest
-  # test "the truth" do
-  #   assert true
-  # end
+  test "Should_be_visit_MyBragDocument_page" do
+    get profile_path
+    assert_response :success
+  end
 end

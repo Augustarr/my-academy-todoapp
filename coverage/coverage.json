@@ -14,10 +14,10 @@
     },
     "/Users/nawamin/academy-project-exam/my-academy-todoapp/app/controllers/profile_controller.rb": {
       "lines": [
-        0,
-        0,
-        0,
-        0
+        1,
+        1,
+        null,
+        null
       ],
       "branches": []
     },
@@ -135,13 +135,13 @@
     },
     "/Users/nawamin/academy-project-exam/my-academy-todoapp/app/jobs/application_job.rb": {
       "lines": [
-        0,
+        1,
         null,
         null,
         null,
         null,
         null,
-        0
+        null
       ],
       "branches": []
     },
@@ -177,7 +177,7 @@
   "groups": {
     "Controllers": {
       "lines": {
-        "covered_percent": 89.74358974358974
+        "covered_percent": 100.0
       }
     },
     "Channels": {
@@ -202,7 +202,7 @@
     },
     "Jobs": {
       "lines": {
-        "covered_percent": 0.0
+        "covered_percent": 100.0
       }
     },
     "Libraries": {
