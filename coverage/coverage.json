@@ -38,15 +38,15 @@
         null,
         null,
         1,
-        1,
+        2,
         null,
-        1,
-        1,
+        2,
+        2,
         1,
         2,
         null,
-        0,
-        0,
+        2,
+        1,
         null,
         null,
         null,
@@ -80,7 +80,7 @@
         null,
         null,
         1,
-        1,
+        2,
         null,
         null
       ],
@@ -95,7 +95,7 @@
           "type": "else",
           "start_line": 23,
           "end_line": 24,
-          "coverage": 0
+          "coverage": 1
         },
         {
           "type": "then",
@@ -164,6 +164,7 @@
     "/Users/nawamin/academy-project-exam/my-academy-todoapp/app/models/todo.rb": {
       "lines": [
         1,
+        1,
         2,
         1,
         1,
@@ -175,7 +176,7 @@
   "groups": {
     "Controllers": {
       "lines": {
-        "covered_percent": 55.26315789473684
+        "covered_percent": 60.526315789473685
       }
     },
     "Channels": {

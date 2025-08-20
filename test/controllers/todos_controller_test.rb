@@ -22,4 +22,15 @@ class TodosControllerTest < ActionDispatch::IntegrationTest
     assert_not todo.completed
     assert_redirected_to todo_path(todo)
   end
+
+  test "should not create todo with invalid params via turbo_stream" do
+    assert_no_difference("Todo.count") do
+      post todos_path,
+          params: { todo: { title: "", completed: false } },
+          headers: { "Accept" => "text/vnd.turbo-stream.html" }
+    end
+
+    assert_includes @response.body, "turbo-stream"
+    assert_includes @response.body, "form"
+  end
 end
