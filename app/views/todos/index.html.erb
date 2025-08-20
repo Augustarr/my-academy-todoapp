@@ -33,9 +33,7 @@
     </div>
     <div class="flex justify-center mb-8">
       <turbo-frame id="new_todo" class="w-full max-w-2xl">
-        <div class="bg-[#C0C6BC] p-6 rounded-xl shadow-md">
-          <%= render "form", todo: Todo.new %>
-        </div>
+        <%= render "form", todo: Todo.new %>
       </turbo-frame>
     </div>
     <div class="flex justify-center">

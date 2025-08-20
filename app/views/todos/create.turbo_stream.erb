@@ -1,5 +1,2 @@
-<%= turbo_stream.append "todos-list" do %>
-  <%= render "todo", todo: @todo %>
-<% end %>
-
-<%= turbo_stream.replace( "form", partial: "form", locals: { todo: @todo })  %>
+<%= turbo_stream.prepend "todos-list", partial: "todos/todo", locals: { todo: @todo } %>
+<%= turbo_stream.replace "new_todo", partial: "form", locals: { todo: Todo.new } %>

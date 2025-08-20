@@ -42,10 +42,11 @@ class TodosController < ApplicationController
 
   def destroy
    @todo.destroy!
+   @todos = Todo.all.order(created_at: :desc)
 
     respond_to do |format|
-      format.turbo_stream { render turbo_stream: turbo_stream.remove("#{helpers.dom_id(@todo)}") }
-      format.html { redirect_to todos_path, status: :see_other, notice: "Todo was successfully destroyed." }
+      format.turbo_stream
+      format.html { redirect_to root_path, notice: "Todo was successfully destroyed." }
     end
   end
 

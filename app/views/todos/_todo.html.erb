@@ -27,7 +27,7 @@
     <div class="todo-actions ml-2">
       <%= button_to  todo_path(todo),
             method: :delete, 
-            data: { turbo: false, testid: "todo-id-#{ todo.id }-del-btn" }, 
+            data: { testid: "todo-id-#{ todo.id }-del-btn" }, 
             class: "px-2 py-2 rounded-lg bg-red-500 text-white hover:bg-red-600 transition max-md:text-sm" do %>
         <%= image_tag "xmark-svgrepo-com.svg", class: "w-4 h-4" %>
       <% end %>
