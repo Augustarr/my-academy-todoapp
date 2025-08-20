@@ -1,0 +1,38 @@
+<li id="<%= dom_id(todo) %>" 
+    class="todo-item bg-[#C0C6BC] transition rounded-xl shadow-md p-4">
+  <div class="flex items-center justify-between">
+    <div class="flex items-center gap-4">
+      <span class="todo-status text-lg font-mono text-[#514F4D] ml-2">
+        <% if todo.completed %>
+          <%= image_tag "check-mark-svgrepo-com.svg", class: "w-5 h-5"%>
+        <% else %>
+          <%= image_tag "square-exclamation-svgrepo-com.svg", class: "w-6 h-6"%>
+        <% end %>
+      </span>
+      <span class="todo-title <%= 'line-through text-[#514F4D] opacity-70' if todo.completed %> text-lg max-md:text-sm font-semibold text-[#3D4140] mx-2">
+        <%= todo.title %>
+      </span>
+    </div>
+    <div class="todo-actions flex gap-3">
+      <% if todo.completed %>
+        <%= button_to "Undone", 
+              todo_path(todo, todo: { completed: false }), 
+              method: :patch, 
+              data: { turbo: false }, 
+              class: "px-3 py-1 rounded-lg bg-[#514F4D] text-white hover:bg-[#353734] transition max-md:text-sm" %>
+      <% else %>
+        <%= button_to "Done", 
+              todo_path(todo, todo: { completed: true }), 
+              method: :patch, 
+              data: { turbo: false }, 
+              class: "px-3 py-1 rounded-lg bg-[#3D4140] text-white hover:bg-[#353734] transition max-md:text-sm" %>
+      <% end %>
+
+      <%= button_to "Delete", 
+            todo_path(todo), 
+            method: :delete, 
+            data: { turbo: false, confirm: "Are you sure you want to delete this todo?" }, 
+            class: "px-3 py-1 rounded-lg bg-red-500 text-white hover:bg-red-600 transition max-md:text-sm" %>
+    </div>
+  </div>
+</li>

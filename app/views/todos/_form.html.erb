@@ -1,0 +1,26 @@
+<%= form_with(model: [todo], 
+              data: { controller: "reset-form", action: "turbo:submit-end->reset-form#reset" }, 
+              class: "w-full flex flex-col gap-4") do |form| %>
+  <% if todo.errors.any? %>
+    <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded-md">
+      <h2 class="font-bold"><%= pluralize(todo.errors.count, "error") %> prevented this todo from being saved:</h2>
+      <ul class="list-disc list-inside">
+        <% todo.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div class="flex items-center gap-4">
+    <%= form.label :title, "Task:", 
+          class: "font-semibold text-[#3D4140]" %>
+    <%= form.text_field :title, 
+          placeholder: "Enter a task...", 
+          class: "flex-1 rounded-lg  bg-white px-3 py-2 text-[#353734] placeholder-[#514F4D]/60 shadow-sm focus:outline-none focus:ring-2 focus:ring-[#DDBD9C]" %>
+    <%= form.button "Add", 
+          type: :submit, 
+          name: "todo[status]", 
+          value: false, 
+          class: "px-4 py-2 bg-[#3D4140] text-white rounded-lg hover:bg-[#353734] transition shadow-md" %>
+  </div>
+<% end %>

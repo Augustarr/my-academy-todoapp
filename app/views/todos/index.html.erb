@@ -17,5 +17,20 @@
         </p>
       <% end %>
     </div>
+    <div class="flex justify-center mb-8">
+      <turbo-frame id="new_todo" class="w-full max-w-2xl">
+        <div class="bg-[#C0C6BC] p-6 rounded-xl shadow-md">
+          <%= render "form", todo: Todo.new %>
+        </div>
+      </turbo-frame>
+    </div>
+    <div class="flex justify-center">
+      <div class="w-full max-w-2xl">
+        <%= turbo_stream_from "todos" %>
+        <ul id="todos-list" class="space-y-4">
+          <%= render @todos %>
+        </ul>
+      </div>
+    </div>
   </div>
 </div>
