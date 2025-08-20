@@ -20,15 +20,6 @@
         ],
         "branches": {}
       },
-      "/Users/nawamin/academy-project-exam/my-academy-todoapp/app/mailers/application_mailer.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          null
-        ],
-        "branches": {}
-      },
       "/Users/nawamin/academy-project-exam/my-academy-todoapp/app/controllers/application_controller.rb": {
         "lines": [
           1,
@@ -154,8 +145,17 @@
           null
         ],
         "branches": {}
+      },
+      "/Users/nawamin/academy-project-exam/my-academy-todoapp/app/mailers/application_mailer.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null
+        ],
+        "branches": {}
       }
     },
-    "timestamp": 1755679822
+    "timestamp": 1755681052
   }
 }
