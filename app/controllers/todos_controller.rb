@@ -1,17 +1,11 @@
 class TodosController < ApplicationController
-   before_action :set_todo, only: [ :show, :edit, :update, :destroy ]
+   before_action :set_todo, only: [ :update, :destroy ]
 
   def index
     @todos = Todo.all.order(created_at: :desc)
   end
 
-  def show
-  end
 
-  def new
-    @todos = Todo.new
-    redirect_to root_path
-  end
 
   def create
    @todo = Todo.new(todo_params)
@@ -27,7 +21,6 @@ class TodosController < ApplicationController
     end
   end
 
-  def edit; end
 
   def update
     respond_to do |format|

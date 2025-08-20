@@ -20,11 +20,11 @@
         ],
         "branches": {}
       },
-      "/Users/nawamin/academy-project-exam/my-academy-todoapp/app/mailers/application_mailer.rb": {
+      "/Users/nawamin/academy-project-exam/my-academy-todoapp/app/controllers/profile_controller.rb": {
         "lines": [
           1,
           1,
-          1,
+          null,
           null
         ],
         "branches": {}
@@ -59,6 +59,27 @@
         ],
         "branches": {}
       },
+      "/Users/nawamin/academy-project-exam/my-academy-todoapp/app/jobs/application_job.rb": {
+        "lines": [
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "branches": {}
+      },
+      "/Users/nawamin/academy-project-exam/my-academy-todoapp/app/mailers/application_mailer.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null
+        ],
+        "branches": {}
+      },
       "/Users/nawamin/academy-project-exam/my-academy-todoapp/app/controllers/todos_controller.rb": {
         "lines": [
           1,
@@ -68,12 +89,6 @@
           2,
           null,
           null,
-          1,
-          null,
-          null,
-          1,
-          1,
-          1,
           null,
           null,
           1,
@@ -90,7 +105,6 @@
           null,
           null,
           null,
-          1,
           null,
           1,
           2,
@@ -125,38 +139,17 @@
           null
         ],
         "branches": {
-          "[:if, 0, 20, 6, 26, 9]": {
-            "[:then, 1, 21, 8, 22, 93]": 1,
-            "[:else, 2, 24, 8, 25, 35]": 1
+          "[:if, 0, 14, 6, 20, 9]": {
+            "[:then, 1, 15, 8, 16, 93]": 1,
+            "[:else, 2, 18, 8, 19, 35]": 1
           },
-          "[:if, 3, 34, 6, 39, 9]": {
-            "[:then, 4, 35, 8, 36, 83]": 1,
-            "[:else, 5, 38, 8, 38, 36]": 1
+          "[:if, 3, 27, 6, 32, 9]": {
+            "[:then, 4, 28, 8, 29, 83]": 1,
+            "[:else, 5, 31, 8, 31, 36]": 1
           }
         }
-      },
-      "/Users/nawamin/academy-project-exam/my-academy-todoapp/app/controllers/profile_controller.rb": {
-        "lines": [
-          1,
-          1,
-          null,
-          null
-        ],
-        "branches": {}
-      },
-      "/Users/nawamin/academy-project-exam/my-academy-todoapp/app/jobs/application_job.rb": {
-        "lines": [
-          1,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null
-        ],
-        "branches": {}
       }
     },
-    "timestamp": 1755687078
+    "timestamp": 1755688166
   }
 }

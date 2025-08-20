@@ -7,11 +7,6 @@ class TodosControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
-  test "should_redirected_to_root_when_get_new" do
-    get new_todo_path
-    assert_redirected_to root_path
-  end
-
   test "Should_be_create_todo" do
     assert_difference("Todo.count", 1) do
       post todos_path, params: {
