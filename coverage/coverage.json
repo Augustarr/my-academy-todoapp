@@ -147,10 +147,10 @@
     },
     "/Users/nawamin/academy-project-exam/my-academy-todoapp/app/mailers/application_mailer.rb": {
       "lines": [
-        0,
-        0,
-        0,
-        0
+        1,
+        1,
+        1,
+        null
       ],
       "branches": []
     },
@@ -192,7 +192,7 @@
     },
     "Mailers": {
       "lines": {
-        "covered_percent": 0.0
+        "covered_percent": 100.0
       }
     },
     "Helpers": {

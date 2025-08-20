@@ -6,14 +6,14 @@
         <% if todo.completed %>
           <%= button_to todo_path(todo, todo: { completed: false }), 
               method: :patch, 
-              data: { turbo: false }, 
+              data: { turbo: false , testid: "todo-id-#{ todo.id }-check-checkbox" }, 
               class: "w-8 h-8 flex justify-center cursor-pointer" do %>
             <%= image_tag "checkbox-check-svgrepo-com.svg", class: "w-8 h-8"%>
           <% end %>
         <% else %>
           <%= button_to todo_path(todo, todo: { completed: true }), 
               method: :patch, 
-              data: { turbo: false }, 
+              data: { turbo: false , testid: "todo-id-#{ todo.id }-uncheck-checkbox" }, 
               class: "w-8 h-8 flex justify-center cursor-pointer" do %>
             <%= image_tag "checkbox-svgrepo-com.svg", class: "w-8 h-8" %>
           <% end %>
