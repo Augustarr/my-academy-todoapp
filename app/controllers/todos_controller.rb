@@ -10,6 +10,7 @@ class TodosController < ApplicationController
 
   def new
     @todos = Todo.new
+    redirect_to root_path
   end
 
   def create
